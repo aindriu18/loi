@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Ireland Live Scores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scores.css">
+    <script src="https://kit.fontawesome.com/532c5c6ff3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class ="header">
+        <a href="index.html"><i class="fa-regular fa-futbol"></i> Fixtures & Results</a>
+        <a href="scores.html"><i class="fa-solid fa-satellite-dish"></i> Live Scores</a>
+        <a href="table.html"><i class="fa-solid fa-trophy"></i></i> League Table</a>
+        <div class="header-right">
+            <a href="http://localhost:3000"><i class="fa-regular fa-user"></i> Login</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Live Scores</h1>
+        <div class="title-box">
+            <p>Home</p>
+            <p id="elapsed">45'</p>
+            <p>Away</p>
+        </div>
+        <div class="title-box">
+            <div class="team">
+                <img  id="homeLogo" >
+                <p id="homeName">Team name</p>
+            </div>
+            <p id="goals">3  -  1</p>
+            <div class="team">
+                <img id="awayLogo">
+                <p id="awayName">Team name</p>
+            </div>
+             
+        </div>
+        <hr>
+        <div id="matchTable" class="matches-table">
+
+        </div>
+    </div>
+     <script src="scores.js"></script>
+</body>
+</html>
