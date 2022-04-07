@@ -48,7 +48,7 @@
     }
   }
 
-  .results_button {
+.results_button {
     overflow: hidden;
     background-color: #0faf37;
     padding: 20px 10px;
@@ -71,6 +71,35 @@
 
 @media screen and (max-width: 500px) {
   .results_button a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.scores_button {
+  overflow: hidden;
+  background-color: #0faf37;
+  padding: 20px 10px;
+}
+
+.scores_button a {
+  color: rgb(230, 225, 225);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.scores_button a:hover {
+  background-color: rgb(250, 124, 6);
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .scores_button a {
     float: none;
     display: block;
     text-align: left;
@@ -221,3 +250,4 @@ input[type=submit]:hover {
     padding: 7%;
   }
 }
+
