@@ -13,6 +13,7 @@ if (user){
   return(
     <>
       <h1>Welcome {user.name}!</h1>
+      
       <a href='/api/auth/logout'>Logout</a>
     </>
   )

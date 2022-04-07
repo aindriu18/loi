@@ -7,7 +7,7 @@
 
 .header {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color:  #0faf37;
     padding: 20px 10px;
 }
 
@@ -106,59 +106,118 @@
   }
 }
 
-.footer {
-  width: 100vw;
-  display: block;
+
+
+footer{
   overflow: hidden;
-  padding: 10px 0;
-  box-sizing: border-box;
   background-color: rgb(250, 124, 6);
-  
-}
-.inner_footer{
-  display: block;
-  margin: 0 auto;
-  width: 1100px;
-  height: 100%;
- 
+  padding: 30px 10px;
+  font-size: 25px;
 }
 
-.logo_container{
-  width: 35%;
-  float: left;
-  height: 100%;
-  display: block;
-}
-
- img{
-  width: 60px;
-  height: auto;
-}
-
-.footer_third{
-  width: calc(21.667 - 20px);
-  margin-right: 10px;
-  float: right;
-  height: 100%;
-  font-size: 18px;
-  color: #000;
-
-}
-
-.footer_third:last-child{
-  margin-right: 0;
-}
-
-.footer_third h1{
-  color: #ddd;
-  display: block;
+.footer1{
+  position: fixed;
+  bottom: 0;
   width: 100%;
-  margin-bottom: 20px;
+}
+
+footer a{
+  color:  rgb(230, 225, 225);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  ;
+}
+
+footer p{
+  float: right;
+  color:  rgb(230, 225, 225);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Create two columns that allows the map and the form to float next to each other */
+.column {
+  float: left;
+  margin-top: 6px;
+  padding: 20px;
+  width: 40%;
 }
 
 
-.footer a:hover {
-  background-color: #0faf37;
-  color: black;
+/* Styles the text input columns on the contact pages*/
+input[type=text],
+select,
+textarea {
+  border: 1px solid #555;
+  margin-bottom: 16px;
+  margin-top: 6px;
+  padding: 12px;
+  resize: vertical;
+  width: 100%;
 }
 
+/* Styles the submit button on the contact page */
+input[type=submit] {
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 12px 20px;
+}
+
+/* When the user hovers over the submit button, it changes colour to 
+grey; the same grey used all over the website.*/
+input[type=submit]:hover {
+  background-color: #555;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.top-contact {
+  text-align: center;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .column,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Makes text responsive for mobile devices */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 7%;
+  }
+}
+
+/* Makes text responsive for mobile devices */
+@media screen and (max-width: 600px) {
+  .top-contact {
+    padding: 7%;
+  }
+}

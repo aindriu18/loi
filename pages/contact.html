@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="parsley.css">
+    <script src="https://kit.fontawesome.com/532c5c6ff3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class ="header">
+        <a href="index.html"><i class="fa-regular fa-futbol"></i> Fixtures & Results</a>
+        <a href="scores.html"><i class="fa-solid fa-satellite-dish"></i> Live Scores</a>
+        <a href="table.html"><i class="fa-solid fa-trophy"></i></i> League Table</a>
+        <div class="header-right">
+            <a href="http://localhost:3000"><i class="fa-regular fa-user"></i> Login</a>
+        </div>
+    </div>
+
+    <div class="top-contact">
+    <h1>Contact Details</h3>
+      <p>If you would like to get in touch, you can fill in the form below.
+      </p>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div id="map" class="column">
+        <!--Displays Google maps with a link to the RTSC-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2345.207243146258!2d-6.418514783909366!3d53.99909693331726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4860cc01b1f5f009%3A0x7ad9b262caf45ad7!2sOriel%20Park!5e0!3m2!1sen!2sie!4v1649097913705!5m2!1sen!2sie" 
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <div class="column">
+        <!--Creates a form that can send me information to my personal email.-->
+        <form data-parsley-validate id="contact-form" enctype="text/plain" action="mailto:aindriuinglis@gmail.com" method="POST">
+          <!-- Form asks for identifying information-->
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." data-parsley-type="alphanum"
+            data-parsley-required="true">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." data-parsley-required="true">
+          <label for="country">Country</label>
+          <!--Gives users the option to select where they are from-->
+          <select id="country" name="country">
+            <option value="ireland">Ireland</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="usa">USA</option>
+            <option value="europe">Rest of Europe</option>
+            <option value="world">Rest of World</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"
+            data-parsley-required="true"></textarea>
+          <!--Parsley used to validate the form-->
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer1">
+    <a href="contact.html"><i class="fa-solid fa-message"></i> Contact</a>
+    <a href="https://www.linkedin.com/in/aenglish1" target="_blank"><i class="fab fa-linkedin"></i></i> LinkedIn</a>
+    <a href="https://github.com/aindriu18" target="_blank"><i class="fab fa-github-square"></i> Github</a>
+    <p>
+        © Andrew English 2022. All rights reserved.
+    </p>
+</footer>
+    
+    <script src="jquery.js"></script>
+    <script src="parsley.js"></script>
+</body>
+</html>

@@ -46,7 +46,7 @@ function addMatchTile(data){
     matchTable.appendChild(matchtile);
 }
 //fetching the data 
-fetch("https://v3.football.api-sports.io/fixtures?live=all", {
+fetch("https://v3.football.api-sports.io/fixtures?live=357-358-359", {
     "method": "GET",
     "headers": {
         "x-rapidapi-host": "v3.football.api-sports.io",
