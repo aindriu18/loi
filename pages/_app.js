@@ -1,6 +1,7 @@
 UserProvider
 import { UserProvider } from '@auth0/nextjs-auth0'
 import '../styles/globals.css'
+import Link from 'next/link'
 
 function MyApp({ Component, pageProps }) {
   return (

@@ -48,6 +48,32 @@
     }
   }
 
+  @media screen and (max-width: 500px) {
+    .footer1 a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .footer1 p{
+      float: none;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    footer a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    footer p{
+      float: none;
+    }
+  }
+
+  .table-space{
+    margin-bottom: 1px;
+  }
+
 .results_button {
     overflow: hidden;
     background-color: #0faf37;
@@ -150,6 +176,10 @@ footer{
   width: 100%;
 }
 
+#wg-api-football-standings{
+  margin-bottom: 70%;
+}
+
 footer a{
   color:  rgb(230, 225, 225);
   text-align: center;
@@ -228,24 +258,25 @@ input[type=submit]:hover {
 
 
 /* Responsive layout - when the screen is less than 600px wide, the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 
   .column,
   input[type=submit] {
-    width: 100%;
+    width: 90%;
     margin-top: 0;
+    margin-bottom: 40%;
   }
 }
 
 /* Makes text responsive for mobile devices */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .container {
     padding: 7%;
   }
 }
 
 /* Makes text responsive for mobile devices */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .top-contact {
     padding: 7%;
   }

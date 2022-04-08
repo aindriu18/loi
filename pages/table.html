@@ -10,6 +10,7 @@
 </head>
 <body>
 
+    <!-- Creates the header that displays on the top left of each page-->
     <div class ="header">
         <a href="index.html"><i class="fa-regular fa-futbol"></i> Fixtures & Results</a>
         <a href="scores.html"><i class="fa-solid fa-satellite-dish"></i> Live Scores</a>
@@ -19,12 +20,14 @@
         </div>
     </div>
 
+    <!-- Creates the options for previous other league tables-->
     <div class ="table_button">
         <a href="table19.html"><i class="fa-solid fa-medal"></i> Table 2019</a>
         <a href="table20.html"><i class="fa-solid fa-medal"></i> Table 2020</a>
         <a href="table21.html"><i class="fa-solid fa-medal"></i> Table 2021</a>
     </div>
 
+    <!-- Widget for league table. Incorporated from API Sports. -->
     <div id="wg-api-football-standings"
      data-host="v3.football.api-sports.io"
      data-league="357"
@@ -35,6 +38,7 @@
      data-show-errors="false"
      class="api_football_loader"></div>
 
+
      <footer class="footer1">
         <a href="contact.html"><i class="fa-solid fa-message"></i> Contact</a>
         <a href="https://www.linkedin.com/in/aenglish1" target="_blank"><i class="fab fa-linkedin"></i></i> LinkedIn</a>
@@ -43,6 +47,8 @@
             © Andrew English 2022. All rights reserved.
         </p>
     </footer>
+
+    <!--Script part of the league table widgit from API Sports-->
 <script
     type="module"
     src="https://widgets.api-sports.io/football/1.1.8/widget.js">
