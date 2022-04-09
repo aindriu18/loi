@@ -1,3 +1,5 @@
+/* Code part of the Auth0 download and intergration*/
+
 import { useUser } from '@auth0/nextjs-auth0'
 import Head from 'next/head'
 import Image from 'next/image'
