@@ -1,3 +1,5 @@
+<!--Live score page which displays all the live games and scores throughout the world when accessing this page.-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +11,7 @@
     <script src="https://kit.fontawesome.com/532c5c6ff3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!-- Creates the header that displays on the top left of each page-->
     <div class ="header">
         <a href="index.html"><i class="fa-regular fa-futbol"></i> Fixtures & Results</a>
         <a href="scores.html"><i class="fa-solid fa-satellite-dish"></i> Live Scores</a>
@@ -17,12 +20,13 @@
             <a href="http://localhost:3000"><i class="fa-regular fa-user"></i> Login</a>
         </div>
     </div>
-
+<!-- Creates the options for world live scores and live scores in League of Ireland.-->
     <div class ="scores_button">
         <a href="scoresLOI.html"><i class="fa-solid fa-satellite-dish"></i> LOI Live Scores</a>
         <a href="scores.html"><i class="fa-solid fa-satellite-dish"></i> World Live Scores</a>
     </div>
 
+    <!-- Creates containers, place hoders and divs to hold team names, team crests, time and scores-->
     <div class="container">
         <h1>Live Scores</h1>
         <div class="title-box">
@@ -48,6 +52,7 @@
         </div>
     </div>
 
+    <!-- Footer with links to personal profiles on Github and LinkedIn along with a contact page-->
     <footer>
         <a href="contact.html"><i class="fa-solid fa-message"></i> Contact</a>
         <a href="https://www.linkedin.com/in/aenglish1" target="_blank"><i class="fab fa-linkedin"></i></i> LinkedIn</a>
@@ -57,7 +62,7 @@
         </p>
     </footer>
 
-
+    <!--JS file specifically for the scores pages-->
      <script src="scores.js"></script>
 </body>
 </html>

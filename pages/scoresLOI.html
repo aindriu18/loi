@@ -1,3 +1,4 @@
+<!--Live score page which displays all the live games and scores in the League of Ireland, once games are being played.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +10,7 @@
     <script src="https://kit.fontawesome.com/532c5c6ff3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Creates the header that displays on the top left of each page-->
     <div class ="header">
         <a href="index.html"><i class="fa-regular fa-futbol"></i> Fixtures & Results</a>
         <a href="scores.html"><i class="fa-solid fa-satellite-dish"></i> Live Scores</a>
@@ -18,11 +20,13 @@
         </div>
     </div>
 
+    <!-- Creates the options for world live scores and live scores in League of Ireland.-->
     <div class ="scores_button">
         <a href="scoresLOI.html"><i class="fa-solid fa-satellite-dish"></i> LOI Live Scores</a>
         <a href="scores.html"><i class="fa-solid fa-satellite-dish"></i> World Live Scores</a>
     </div>
 
+    <!-- Creates containers, place holders and divs to hold team names, team crests, time and scores-->
     <div class="container">
         <h1>Live Scores</h1>
         <div class="title-box">
@@ -48,12 +52,13 @@
         </div>
     </div>
 
+    <!-- A message which informs users of the fixtures-->
     <div class="loi-scores">
-        <h2>Please Note, LOI Games Take Place on Friday and Monday Evenings. If No Games are Displayed, Please Refer to the 
-            Fixtures & Results Page. Alternatively, you can Check out Live Scores from all Across the World in World Live 
-            Scores Page. </h2>
+        <h2>Please Note, LOI Games Usually Take Place on Friday and Monday Evenings. If No Games are Displayed, Please Refer to the 
+            Fixtures & Results Page, or the World Live Score Page. </h2>
     </div>
 
+    <!-- Footer with links to personal profiles on Github and LinkedIn along with a contact page-->
     <footer class="footer1">
         <a href="contact.html"><i class="fa-solid fa-message"></i> Contact</a>
         <a href="https://www.linkedin.com/in/aenglish1" target="_blank"><i class="fab fa-linkedin"></i></i> LinkedIn</a>
@@ -63,7 +68,7 @@
         </p>
     </footer>
 
-
+    <!--JS file specifically for the scores pages-->
      <script src="scoresLOI.js"></script>
 </body>
 </html>
