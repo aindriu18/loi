@@ -10,6 +10,7 @@
 </head>
 <body>
 
+    <!-- Creates the header that displays on the top left of each page-->
     <div class ="header">
         <a href="index.html"><i class="fa-regular fa-futbol"></i> Fixtures & Results</a>
         <a href="scores.html"><i class="fa-solid fa-satellite-dish"></i> Live Scores</a>
@@ -19,11 +20,13 @@
         </div>
     </div>
 
+    <!-- Creates the options for previous fixtures and results-->
     <div class ="results_button">
         <a href="results19.html"><i class="fa-solid fa-table-cells"></i> Results 2019</a>
         <a href="results20.html"><i class="fa-solid fa-table-cells"></i> Results 2020</a>
     </div>
 
+    <!-- Widget for fixtures and results. Incorporated from API Sports. -->
     <div id="wg-api-football-fixtures"
     data-host="v3.football.api-sports.io"
     data-refresh="60"
@@ -39,6 +42,7 @@
     class="api_football_loader">
     </div>
 
+    <!-- Footer with links to personal profiles on Github and LinkedIn along with a contact page-->
     <footer class="footer">
         <a href="contact.html"> <i class="fa-solid fa-message"></i> Contact</a>
         <a href="https://www.linkedin.com/in/aenglish1" target="_blank"><i class="fab fa-linkedin"></i></i> LinkedIn</a>
@@ -48,6 +52,7 @@
         </p>
     </footer>
 
+    <!--Script part of the league table widgit from API Sports.-->
     <script
     type="module"
     src="https://widgets.api-sports.io/football/1.1.8/widget.js">
