@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto');
 
 
-
+/* Styles the pages of scores.html and scoresLOI.html */
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +10,7 @@
     
 }
 
+/* Styles the paragrapgh highlighting the days LOI games are played on scoresLOI.html page */
 .loi-scores {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -19,7 +20,7 @@
     color: red;
 }
 
-
+/* Container is the div on scores pages that containers html for home and away teams, time and goals. */
 .container{
     margin: 0;
     padding: 16px;
@@ -29,6 +30,7 @@
     text-align: center;
 }
 
+/* Title box holds information on home and away teams, names and scores */
 .title-box{
     margin: 25px 0;
     display: flex;
@@ -38,24 +40,30 @@
     align-items: center;
     width: 100%;
     font-size: 1.5em;
-   
-    
 }
+
+/* Styles font size for goals */
 .title-box #goals{
     font-size: 1.8em;
 }
+
+/* Styles home and away team names and crests */
 .team{
     width: 100px;
 }
+/* Styles team crest images */
 .team img{
     height: 54px;
     width: 54px;
 }
+
+/* Styles all the matches displayed after the first match */
 .matches-table{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
 }
+/* Styles match tile class */
 .match-tile{
     position: relative;
     left: 50%;
@@ -67,17 +75,20 @@
     align-items: center;
     
 }
+/* Styles match tile images */
 .match-tile img{
     width: 52px;
     height: 52px;
 }
+/* Styles match tile paragrapgh*/
 .match-tile p{
     font-size: 1.2rem;
 }
-
+/* Styles match tile goals*/
 .match-tile #goals{
     font-size: 1.8rem;
 }
+/* Styles match tile team*/
 .match-tile .team{
     width: 100px;
 }

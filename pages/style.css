@@ -1,3 +1,5 @@
+
+/*Adds common css styling across the page*/
 *{
   margin: 0%;
   padding: 0%;
@@ -5,12 +7,14 @@
   text-decoration: none;
 }
 
+/*Adds colour and padding to header*/
 .header {
     overflow: hidden;
     background-color:  #0faf37;
     padding: 20px 10px;
 }
 
+/*Styles all a tags across the site*/
 .header a {
     float: left;
     color: black;
@@ -22,21 +26,18 @@
     border-radius: 4px;
   }
 
-  /* Change the background color on mouse-over */
+  /* Change the background color on mouse-over a the a tags in header */
 .header a:hover {
     background-color: #ddd;
     color: black;
   }
 
-  .header a.active {
-    background-color: dodgerblue;
-    color: white;
-  }
-
+/* Moves the login button to the right in header */
   .header-right {
     float: right;
   }
 
+  /* Makes header responsive on mobile devices */
   @media screen and (max-width: 500px) {
     .header a {
       float: none;
@@ -47,7 +48,7 @@
       float: none;
     }
   }
-
+  /* Makes footer responsive on mobile devices */
   @media screen and (max-width: 500px) {
     .footer1 a {
       float: none;
@@ -59,6 +60,7 @@
     }
   }
 
+  /* Makes header responsive on mobile devices */
   @media screen and (max-width: 500px) {
     footer a {
       float: none;
@@ -70,16 +72,14 @@
     }
   }
 
-  .table-space{
-    margin-bottom: 1px;
-  }
-
+/* Styles the results buttons on each reulsts page */
 .results_button {
     overflow: hidden;
     background-color: #0faf37;
     padding: 20px 10px;
 }
 
+/* Styles the results button a tags on each reulsts page */
 .results_button a {
   color: rgb(230, 225, 225);
   text-align: center;
@@ -90,11 +90,13 @@
   border-radius: 4px;
 }
 
+/* Styles the results buttons on each reulsts page by creating a hover effect */
 .results_button a:hover {
   background-color: rgb(250, 124, 6);
   color: black;
 }
 
+/* Makes results buttons responsive */
 @media screen and (max-width: 500px) {
   .results_button a {
     float: none;
@@ -103,12 +105,14 @@
   }
 }
 
+/* Makes score buttons responsive */
 .scores_button {
   overflow: hidden;
   background-color: #0faf37;
   padding: 20px 10px;
 }
 
+/* Styles the score buttons on each score page that have a tag */
 .scores_button a {
   color: rgb(230, 225, 225);
   text-align: center;
@@ -119,11 +123,13 @@
   border-radius: 4px;
 }
 
+/* Styles the score buttons on each score page by creating a hover effect */
 .scores_button a:hover {
   background-color: rgb(250, 124, 6);
   color: black;
 }
 
+/* Makes score buttons responsive */
 @media screen and (max-width: 500px) {
   .scores_button a {
     float: none;
@@ -132,12 +138,14 @@
   }
 }
 
+/* Styles the table buttons on each table page */
 .table_button {
   overflow: hidden;
   background-color: #0faf37;
   padding: 20px 10px;
 }
 
+/* Styles the table buttons on each table page with a tags*/
 .table_button a {
   color: rgb(230, 225, 225);
   text-align: center;
@@ -148,11 +156,13 @@
   border-radius: 4px;
 }
 
+/* Styles the table buttons on each table page by creating a hover effect */
 .table_button a:hover {
   background-color: rgb(250, 124, 6);
   color: black;
 }
 
+/*Makes table buttons responsive */
 @media screen and (max-width: 500px) {
   .table_button a {
     float: none;
@@ -161,8 +171,7 @@
   }
 }
 
-
-
+/* Styles footer without class defined*/
 footer{
   overflow: hidden;
   background-color: rgb(250, 124, 6);
@@ -170,16 +179,19 @@ footer{
   font-size: 25px;
 }
 
+/* Styles footer that has a class defined */
 .footer1{
   position: fixed;
   bottom: 0;
   width: 100%;
 }
 
+/* Creates space on the table widget for when a responsive layout is required*/
 #wg-api-football-standings{
   margin-bottom: 70%;
 }
 
+/* Styles a tags on footer */
 footer a{
   color:  rgb(230, 225, 225);
   text-align: center;
@@ -191,6 +203,7 @@ footer a{
   ;
 }
 
+/* Styles paragrapgh included on footer */
 footer p{
   float: right;
   color:  rgb(230, 225, 225);
