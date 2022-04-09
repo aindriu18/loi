@@ -11,6 +11,7 @@
 </head>
 <body>
 
+  <!-- Creates the header that displays on the top left of each page-->
     <div class ="header">
         <a href="index.html"><i class="fa-regular fa-futbol"></i> Fixtures & Results</a>
         <a href="scores.html"><i class="fa-solid fa-satellite-dish"></i> Live Scores</a>
@@ -20,6 +21,7 @@
         </div>
     </div>
 
+    <!-- Paragrapgh that welcomes user to contact page-->
     <div class="top-contact">
     <h1>Contact Details</h3>
       <p>If you would like to get in touch, you can fill in the form below.
@@ -27,6 +29,7 @@
   </div>
 
 
+  <!-- Creates the lables, text boxes and containers for entering contact info.-->
   <div class="container">
     <div class="row">
       <div id="map" class="column">
@@ -36,7 +39,7 @@
         </iframe>
       </div>
       <div class="column">
-        <!--Creates a form that can send me information to my personal email.-->
+        <!--Creates a form that can send me information to my personal email. Form validated by parsley library-->
         <form data-parsley-validate id="contact-form" enctype="text/plain" action="mailto:aindriuinglis@gmail.com" method="POST">
           <!-- Form asks for identifying information-->
           <label for="fname">First Name</label>

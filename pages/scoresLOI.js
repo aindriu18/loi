@@ -45,7 +45,7 @@ function addMatchTile(data){
 
     matchTable.appendChild(matchtile);
 }
-//fetching the data 
+//fetching the data from the API. Includes my own API key which I had to register for.
 fetch("https://v3.football.api-sports.io/fixtures?live=357-358-359", {
     "method": "GET",
     "headers": {
@@ -59,7 +59,7 @@ fetch("https://v3.football.api-sports.io/fixtures?live=357-358-359", {
     var goals = matchesList[0]['goals'];
     var teams = matchesList[0]['teams'];
     console.log(matchesList.length);
-   //Now let's set our first match
+   //Shows matches
    elapsedTime.innerHTML = fixture['status']['elapsed'] + "'";
    homeTeamImage.src = teams['home']['logo'];
    homeTeamName.innerHTML = teams['home']['name'];

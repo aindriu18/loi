@@ -45,7 +45,7 @@ function addMatchTile(data){
 
     matchTable.appendChild(matchtile);
 }
-//fetching the data 
+//fetching the data from the API. Includes my own API key which I had to register for.
 fetch("https://v3.football.api-sports.io/fixtures?live=all", {
     "method": "GET",
     "headers": {
